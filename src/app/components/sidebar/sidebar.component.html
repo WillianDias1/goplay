@@ -1,0 +1,41 @@
+<div class="sidebar">
+  <div class="logo-section">
+    <img class="logo" src="Logo.png" alt="Logo GoPlay" />
+  </div>
+  <ul>
+    <li>
+      <button
+        routerLink="/home"
+        (mouseenter)="updateIcon('home', true)"
+        (mouseleave)="updateIcon('home', false)">
+        <img [src]="icons.home" alt="Ícone Home" />
+        Home
+      </button>
+    </li>
+    <li>
+      <button
+        routerLink="/saved"
+        (mouseenter)="updateIcon('saved', true)"
+        (mouseleave)="updateIcon('saved', false)">
+        <img [src]="icons.saved" alt="Ícone Salvos" />
+        Salvos
+      </button>
+    </li>
+    <li>
+      <button
+        routerLink="/assistir-mais-tarde"
+        (mouseenter)="updateIcon('later', true)"
+        (mouseleave)="updateIcon('later', false)">
+        <img [src]="icons.later" alt="Ícone Assistir mais tarde" />
+        Assistir mais tarde
+      </button>
+    </li>
+  </ul>
+  <button
+    class="logout"
+    (mouseenter)="updateIcon('logout', true)"
+    (mouseleave)="updateIcon('logout', false)">
+    <img [src]="icons.logout" alt="Ícone Sair" />
+    Sair
+  </button>
+</div>
